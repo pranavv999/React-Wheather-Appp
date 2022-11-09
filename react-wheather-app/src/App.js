@@ -4,6 +4,8 @@ import CurrentWeather from "./components/current-weather/current-weather";
 import { WEATHER_API_URL } from "./api/api";
 import { useState } from "react";
 import Forecast from "./components/forecast/forecast";
+import NoResults from "./components/no-results/no-results";
+import { SLOGANS } from "./constants/constants";
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -39,6 +41,9 @@ function App() {
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {foreCast && <Forecast data={foreCast} />}
+      {!currentWeather && !foreCast && (
+        <NoResults delayInMs={8000} data={SLOGANS}/>
+      )}
     </div>
   );
 }
