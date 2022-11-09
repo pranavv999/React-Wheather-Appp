@@ -1,0 +1,10 @@
+.slider-title {
+    font-size: 50px;
+    margin: 0;
+    position: absolute;
+    top: 100px;
+    background:linear-gradient(to right top, #cf0733, #c5004b, #b30061, #980074, #730084, #682da4, #5048c1, #0060dc, #0091ff, #00b4ea, #00cf9a, #03e120);
+    background: linear-gradient(to right top, #050001, #210312, #310224, #3e003c, #40005c, #341668, #232371, #002e79, #002f5d, #002533, #001914, #030403);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
